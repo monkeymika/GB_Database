@@ -1,0 +1,88 @@
+#banner {
+    height: 100vh;
+    // background: url("/images/GB8.jpg");
+    // background-size: cover;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+
+    .actions {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title p {
+        font-family: "Roboto Slab", serif;
+        font-size: 1em;
+        font-weight: 900;
+        letter-spacing: 0.075em;
+        margin-top: -0.5em;
+        text-transform: uppercase;
+        color: var(--text);
+    }
+
+    h1 {
+        margin-top: -0.125em;
+        color: black;
+    }
+
+    p {
+        color: black;
+        font-family: "Roboto Slab", serif;
+    }
+
+    .content {
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1250px;
+        height: 100%;
+        padding: 50px;
+
+    }
+
+    .banner__image {
+        width: 40%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+}
+
+
+
+/*****************************************************/
+/******************** RESPONSIVE ********************/
+/***************************************************/
+
+
+@media screen and (max-width: 881px) {
+    #banner {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+
+
+
+        h1 br {
+            display: none;
+        }
+
+        .content {
+
+            width: 100%;
+
+        }
+
+
+    }
+}

@@ -1,0 +1,31 @@
+// SASS
+
+//Main
+
+@import "./sass/main/banner.scss";
+@import "./sass/main/section-news.scss";
+@import "./sass/main/section-birthday.scss";
+@import "./sass/main/lastMost.scss";
+@import "./sass/main/comments.scss";
+@import "./sass/main/videos.scss";
+@import "./sass/header.scss";
+
+//Fullsets Pages
+@import "./sass/fullsets-pages.scss";
+
+//@at-root
+@import "./sass/settings.scss";
+@import "./sass/wrapper.scss";
+@import "./sass/layout.scss";
+@import "./sass/sidebar.scss";
+@import "./sass/footer.scss";
+
+// Base
+
+@import "./base/typography.scss";
+
+
+// Components
+
+@import "./components/button.scss";
+@import "./components/animation.scss";

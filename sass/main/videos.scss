@@ -1,0 +1,38 @@
+.containerFigure {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    figure {
+        margin: 1rem;
+        border: 2px solid black;
+
+
+    }
+
+
+    iframe {
+        width: 560px;
+        height: 315px;
+
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+
+    @media screen and (max-width: 1340px) {
+        iframe {
+            width: 460px;
+            height: 215px;
+        }
+    }
+
+    @media screen and (max-width: 590px) {
+        iframe {
+            width: 360px;
+            height: 115px;
+        }
+    }
+}
