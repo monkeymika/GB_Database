@@ -1,3 +1,46 @@
+/*****************************************************/
+/********************* Home ************************/
+/***************************************************/
+header {
+  text-align: center;
+  color: var(--text);
+}
+header img {
+  padding: 5px;
+}
+
+.icons {
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+  border-bottom: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+.icons p {
+  font-weight: 900;
+}
+.icons li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}
+.icons i {
+  font-size: 2em;
+  color: var(--text);
+}
+.icons i:hover {
+  color: var(--button);
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+.icons * {
+  margin-bottom: 0;
+}
+.icons .label {
+  display: none;
+}
+
 #banner {
   height: 100vh;
   display: flex;
@@ -428,10 +471,13 @@
 .containerFigure figure {
   margin: 1rem;
   border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px 0px;
 }
 .containerFigure iframe {
   width: 560px;
   height: 315px;
+  border-radius: 15px 15px 0 0;
 }
 .containerFigure figcaption {
   text-align: center;
@@ -449,46 +495,74 @@
   }
 }
 
-header {
-  text-align: center;
+footer {
   color: var(--text);
+  background: #777777;
+  background: -moz-linear-gradient(top, #777777 0%, #B3B3B3 100%);
+  background: -webkit-linear-gradient(top, #777777 0%, #B3B3B3 100%);
+  background: linear-gradient(to bottom, #777777 0%, #B3B3B3 100%);
+  font-weight: 700;
 }
-header img {
-  padding: 5px;
-}
-
-.icons {
-  list-style: none;
-  text-decoration: none;
-  position: relative;
-  border-bottom: none;
+footer .container__section {
   display: flex;
   justify-content: space-around;
-  padding: 5px;
+  align-items: center;
 }
-.icons p {
-  font-weight: 900;
+footer .content {
+  text-align: center;
 }
-.icons li {
-  display: inline-block;
-  padding: 0 1em 0 0;
+footer .content h2 {
+  margin: none;
 }
-.icons i {
-  font-size: 2em;
+footer .footer__section {
+  padding: 30px 0px;
+  text-align: center;
+}
+footer .footer__section .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+}
+footer .footer__section .row a {
+  text-decoration: none;
   color: var(--text);
+  transition: 0.5s;
 }
-.icons i:hover {
+footer .footer__section .row a:hover {
   color: var(--button);
-  transform: scale(1.1);
-  transition: 0.8s;
 }
-.icons * {
-  margin-bottom: 0;
+footer .footer__section .row ul {
+  width: 100%;
 }
-.icons .label {
-  display: none;
+footer .footer__section .row li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+footer .footer__section .row i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+footer .copyright {
+  text-align: center;
+}
+@media screen and (max-width: 720px) {
+  footer .footer__section {
+    text-align: left;
+    padding: 3%;
+  }
+  footer .footer__section li {
+    display: block;
+    margin: 5px 0px;
+    text-align: left;
+  }
+  footer .footer__section i {
+    margin: 0% 3%;
+  }
 }
 
+/*****************************************************/
+/********************* PAGES ************************/
+/***************************************************/
 .buttons__filter {
   text-align: center;
 }
@@ -606,6 +680,199 @@ h1 {
 
 .icons {
   background: var(--grey);
+}
+
+.container__cartridges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 3rem;
+}
+
+.container__title {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.area__box {
+  background: var(--text);
+  position: relative;
+  overflow: hidden;
+  opacity: 0.8;
+  position: relative;
+  vertical-align: top;
+  transition: 0.5s;
+  transition-property: opacity;
+  text-align: center;
+  align-self: center;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px 0px;
+  cursor: pointer;
+}
+.area__box h4 {
+  margin-top: 70px;
+  color: white;
+  font-size: 2rem;
+  transition: 1s;
+}
+.area__box:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+  background: var(--button);
+}
+.area__box p {
+  opacity: 0;
+  transition: all 1s ease;
+  color: white;
+}
+.area__box:hover p {
+  opacity: 1;
+  transform: translateY(-15px);
+}
+.area__box:hover h4 {
+  transform: translateY(-20px);
+}
+
+/********************* ABOUT *********************/
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 6vh 0;
+  flex-direction: column;
+}
+.team h2 {
+  font-size: 45px;
+  font-weight: 600;
+  position: relative;
+  margin: 100px 0 100px 0;
+  padding-bottom: 10px;
+}
+.team .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 70px;
+}
+.team .box {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid black;
+  margin: 0 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.team .box img {
+  vertical-align: bottom;
+  width: 300px;
+  transition: all 0.3s ease;
+}
+.team .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(189, 174, 88, 0.6431372549);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+.team .name {
+  font-size: 25px;
+  font-weight: 600;
+  transform: scale(0);
+  transform-origin: 0%;
+  color: white;
+}
+.team .details {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  margin-top: -10px;
+  transform: scale(0);
+  transform-origin: 0%;
+  transition: all 0.3s ease;
+}
+.team .social__links {
+  display: flex;
+  justify-content: center;
+  transform-origin: 0%;
+  transform: scale(0);
+}
+.team .social__links a {
+  margin: 10px 5px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.team .social__links a:hover {
+  color: var(--button);
+  transform: scale(1.1);
+}
+.team .box:hover .info {
+  transform: scale(1);
+}
+.team .box:hover img {
+  transform: scale(1.1);
+}
+.team .box:hover .name,
+.team .box:hover .details,
+.team .box:hover .social__links {
+  transform: scale(1);
+}
+.team .box:hover .name {
+  transition: all 0.3s ease 0.2s;
+}
+.team .box:hover .details {
+  transition: all 0.3s ease 0.3s;
+}
+.team .box:hover .social__links {
+  transition: all 0.3s ease 0.4s;
+}
+
+.container__help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+.container__help p {
+  margin: auto;
+}
+
+.bloc__help {
+  margin-bottom: 8rem;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 3rem;
+}
+
+.container__pics {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 5px 10px;
+}
+
+.explanation__pic {
+  display: flex;
+  justify-content: center;
 }
 
 /* reset css*/
@@ -778,71 +1045,6 @@ h1 {
 }
 .sidebar .items:hover .sub__list {
   display: block;
-}
-
-footer {
-  color: var(--text);
-  background: #777777;
-  background: -moz-linear-gradient(top, #777777 0%, #B3B3B3 100%);
-  background: -webkit-linear-gradient(top, #777777 0%, #B3B3B3 100%);
-  background: linear-gradient(to bottom, #777777 0%, #B3B3B3 100%);
-  font-weight: 700;
-}
-footer .container__section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-footer .content {
-  text-align: center;
-}
-footer .content h2 {
-  margin: none;
-}
-footer .footer__section {
-  padding: 30px 0px;
-  text-align: center;
-}
-footer .footer__section .row {
-  width: 100%;
-  margin: 1% 0%;
-  padding: 0.6% 0%;
-}
-footer .footer__section .row a {
-  text-decoration: none;
-  color: var(--text);
-  transition: 0.5s;
-}
-footer .footer__section .row a:hover {
-  color: var(--button);
-}
-footer .footer__section .row ul {
-  width: 100%;
-}
-footer .footer__section .row li {
-  display: inline-block;
-  margin: 0px 30px;
-}
-footer .footer__section .row i {
-  font-size: 2em;
-  margin: 0% 1%;
-}
-footer .copyright {
-  text-align: center;
-}
-@media screen and (max-width: 720px) {
-  footer .footer__section {
-    text-align: left;
-    padding: 3%;
-  }
-  footer .footer__section li {
-    display: block;
-    margin: 5px 0px;
-    text-align: left;
-  }
-  footer .footer__section i {
-    margin: 0% 3%;
-  }
 }
 
 body,

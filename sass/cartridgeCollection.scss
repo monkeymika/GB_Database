@@ -1,0 +1,57 @@
+.container__cartridges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem;
+}
+
+.container__title {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.area__box {
+    background: var(--text);
+    position: relative;
+    overflow: hidden;
+    opacity: 0.8;
+    position: relative;
+    vertical-align: top;
+    transition: 0.5s;
+    transition-property: opacity;
+    text-align: center;
+    align-self: center;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 0px;
+    cursor: pointer;
+
+    h4 {
+        margin-top: 70px;
+        color: white;
+        font-size: 2rem;
+        transition: 1s;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.5s ease;
+        background: var(--button);
+    }
+
+    p {
+        opacity: 0;
+        transition: all 1s ease;
+        color: white;
+    }
+
+    &:hover p {
+        opacity: 1;
+        transform: translateY(-15px);
+    }
+
+    &:hover h4 {
+        transform: translateY(-20px);
+    }
+}

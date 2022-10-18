@@ -3,17 +3,20 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 
+
+
     figure {
         margin: 1rem;
         border: 2px solid black;
-
-
+        border-radius: 15px;
+        box-shadow: 10px 10px 10px 0px;
     }
 
 
     iframe {
         width: 560px;
         height: 315px;
+        border-radius: 15px 15px 0 0;
 
     }
 

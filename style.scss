@@ -1,24 +1,45 @@
-// SASS
+/*****************************************************/
+/********************* Home ************************/
+/***************************************************/
+
+//Header
+@import "./sass/header.scss";
 
 //Main
-
 @import "./sass/main/banner.scss";
 @import "./sass/main/section-news.scss";
 @import "./sass/main/section-birthday.scss";
 @import "./sass/main/lastMost.scss";
 @import "./sass/main/comments.scss";
 @import "./sass/main/videos.scss";
-@import "./sass/header.scss";
 
-//Fullsets Pages
+//Footer
+@import "./sass/footer.scss";
+
+/*****************************************************/
+/********************* PAGES ************************/
+/***************************************************/
+
+//Fullsets Page
 @import "./sass/fullsets-pages.scss";
+
+//Zoom On Page
+@import "./sass/cartridgeCollection.scss";
+
+/********************* ABOUT *********************/
+
+//Team Page
+@import "./sass/team.scss";
+
+//Can i help Page
+@import "./sass/help.scss";
+
 
 //@at-root
 @import "./sass/settings.scss";
 @import "./sass/wrapper.scss";
 @import "./sass/layout.scss";
 @import "./sass/sidebar.scss";
-@import "./sass/footer.scss";
 
 // Base
 
