@@ -1,52 +1,51 @@
 /*****************************************************/
-/********************* Home ************************/
-/***************************************************/
-
-//Header
-@import "./sass/header.scss";
-
-//Main
-@import "./sass/main/banner.scss";
-@import "./sass/main/section-news.scss";
-@import "./sass/main/section-birthday.scss";
-@import "./sass/main/lastMost.scss";
-@import "./sass/main/comments.scss";
-@import "./sass/main/videos.scss";
-
-//Footer
-@import "./sass/footer.scss";
-
-/*****************************************************/
 /********************* PAGES ************************/
 /***************************************************/
+//Home
+@import "./sass/pages/home/banner.scss";
+@import "./sass/pages/home/section-news.scss";
+@import "./sass/pages/home/section-birthday.scss";
+@import "./sass/pages/home/lastMost.scss";
+@import "./sass/pages/home/comments.scss";
+@import "./sass/pages/home/videos.scss";
 
 //Fullsets Page
-@import "./sass/fullsets-pages.scss";
+@import "./sass/pages/fullsets-pages.scss";
 
 //Zoom On Page
-@import "./sass/cartridgeCollection.scss";
-
-/********************* ABOUT *********************/
+@import "./sass/pages/cartridgeCollection.scss";
 
 //Team Page
-@import "./sass/team.scss";
+@import "./sass/pages/team.scss";
 
 //Can i help Page
-@import "./sass/help.scss";
+@import "./sass/pages/help.scss";
+
+//Ads and catalog
+@import "./sass/pages/adsCatalog.scss";
+
+// Digs on database page
+@import "./sass/pages/digs.scss";
 
 
-//@at-root
+/*****************************************************/
+/********************* LAYOUT ***********************/
+/***************************************************/
 @import "./sass/settings.scss";
-@import "./sass/wrapper.scss";
-@import "./sass/layout.scss";
-@import "./sass/sidebar.scss";
+@import "./sass/layout/wrapper.scss";
+@import "./sass/layout/marges.scss";
+@import "./sass/layout/footer.scss";
+@import "./sass/layout/header.scss";
 
-// Base
+/*****************************************************/
+/********************* BASE *************************/
+/***************************************************/
 
-@import "./base/typography.scss";
+@import "./sass/base/typography.scss";
 
+/*****************************************************/
+/********************* COMPONENTS *******************/
+/***************************************************/
 
-// Components
-
-@import "./components/button.scss";
-@import "./components/animation.scss";
+@import "./sass/components/button.scss";
+@import "./sass/components/animation.scss";

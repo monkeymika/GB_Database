@@ -38,4 +38,11 @@
             height: 115px;
         }
     }
+
+    @media screen and (max-width: 390px) {
+        iframe {
+            width: 260px;
+            height: 100px;
+        }
+    }
 }

@@ -1,7 +1,6 @@
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-button,
 .button {
     appearance: none;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -24,7 +23,7 @@ button,
     white-space: nowrap;
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.09);
         transition: 0.3s;
         background: var(--button);
     }

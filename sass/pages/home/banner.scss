@@ -6,31 +6,24 @@
     // background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    margin-top: 45px;
 
 
     .actions {
         display: flex;
         justify-content: center;
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: apparition 0.8s 0.8s ease-out forwards;
     }
 
     .title p {
-        font-family: "Roboto Slab", serif;
         font-size: 1em;
         font-weight: 900;
         letter-spacing: 0.075em;
         margin-top: -0.5em;
         text-transform: uppercase;
         color: var(--text);
-    }
-
-    h1 {
-        margin-top: -0.125em;
-        color: black;
-    }
-
-    p {
-        color: black;
-        font-family: "Roboto Slab", serif;
     }
 
     .content {
@@ -44,34 +37,47 @@
         max-width: 1250px;
         height: 100%;
         padding: 50px;
+        //apparition progressive
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: apparition 0.8s 0.2s ease-out forwards;
+    }
 
+    h1 {
+        margin-top: -0.125em;
+        color: black;
+    }
+
+    p {
+        color: black;
+        //apparition progressive
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: apparition 0.8s 0.6s ease-out forwards;
     }
 
     .banner__image {
         width: 40%;
+        //apparition progressive
+        opacity: 0;
+        transform: translateX(30px);
+        animation: apparition 0.8s 1s ease-out forwards;
 
         img {
             width: 100%;
         }
     }
-
-
 }
-
 
 
 /*****************************************************/
 /******************** RESPONSIVE ********************/
 /***************************************************/
 
-
 @media screen and (max-width: 881px) {
     #banner {
-        height: 70vh;
         display: flex;
-        flex-direction: column;
-
-
+        flex-direction: column-reverse;
 
         h1 br {
             display: none;
@@ -83,6 +89,27 @@
 
         }
 
+        .banner__image {
+            width: 50%;
+            margin-top: 75px;
 
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #banner {
+
+
+        .banner__image {
+            width: 68%;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }
