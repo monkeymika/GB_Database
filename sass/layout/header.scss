@@ -4,7 +4,7 @@ header {
     align-items: center;
     background: var(--grey2);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 15px 20px;
+    padding: 8px 20px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -150,7 +150,7 @@ button {
     h3 {
         text-align: center;
         padding: 4rem 0 0 0;
-        color: white;
+        color: var(--text);
     }
 
     .alt {
@@ -163,7 +163,8 @@ button {
             padding: 12px 8px 12px 30px;
             text-decoration: none;
             font-size: 18px;
-            color: white;
+            color: var(--text);
+            font-weight: 800;
             display: block;
             transition: 0.3s;
             border-bottom: 1px solid rgb(119, 119, 126);
@@ -231,6 +232,10 @@ button {
     .sub__list {
         display: none;
         transition: 2s;
+
+        .container__fullset {
+            display: flex;
+        }
 
         .items__sub__list {
             padding: 5px 28px;

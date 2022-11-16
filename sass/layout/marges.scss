@@ -3,10 +3,15 @@
     flex-shrink: 1;
     width: 100%;
 
-    .inner {
+    .inner1,
+    .inner2,
+    .inner3,
+    .inner4,
+    .inner5 {
         padding: 0 6em 0.1em 5em;
         margin: 0 auto;
         max-width: 110em;
+        position: relative;
 
         @media screen and (max-width: 1680px) {
             padding: 0 5em 0.1em 5em;
@@ -20,4 +25,32 @@
             padding: 3em 0 2em 0;
         }
     }
+}
+
+// Top Wave Separator
+
+.custom-shape-divider-top-1667833748 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1667833748 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 44px;
+}
+
+.custom-shape-divider-top-1667833748 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-top-1667833748 .shape-fill2 {
+    fill: rgb(243, 243, 243);
+    ;
 }

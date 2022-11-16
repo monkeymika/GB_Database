@@ -1,15 +1,27 @@
 .major {
+    text-align: center;
+    margin: 0 0 2em 0;
+    padding: 0 0.75em 0.5em 0;
+
     h2 {
         font-size: 2em;
         font-weight: 700;
+        border-bottom: solid 3px var(--text);
+        width: auto;
+        display: inline-block;
+
+
+        &::after {
+            content: "";
+            display: block;
+            border-top: 3px solid var(--button);
+            margin-top: 4px;
+            padding: 3px;
+        }
     }
 
-    >:last-child {
-        border-bottom: solid 3px var(--button);
-        display: inline-block;
-        margin: 0 0 2em 0;
-        padding: 0 0.75em 0.5em 0;
-    }
+
+
 }
 
 
