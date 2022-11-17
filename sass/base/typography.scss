@@ -66,9 +66,13 @@ p {
     font-family: 'Lato', sans-serif;
 }
 
+
+
 h1,
-h2 {
-    color: #3d4449;
+h2,
+h3,
+h4 {
+    color: var(--text);
     font-family: 'early_gameboyregular';
     font-weight: 700;
     line-height: 1.5;
@@ -103,6 +107,8 @@ h3 {
 
 h4 {
     font-size: 1.1em;
+    background: var(--text);
+    color: white;
 }
 
 h5 {

@@ -560,22 +560,63 @@
 .container__twoBlocks {
   display: flex;
   margin: 3rem;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 /*********** Presentation du jeu ***********/
 .left__block {
-  background: rgb(32, 31, 31);
+  border-radius: 15px;
   width: 70%;
-  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background: var(--grey2);
+  box-shadow: 0px 4px 10px 2px;
+}
+.left__block li {
+  list-style-type: initial;
+  margin: 1.5rem;
+}
+
+.game__presentation__container,
+.game__info__container,
+.other__photos,
+.credit__pcb,
+.import,
+.cover__compare,
+.ingame__compare,
+.version__compare,
+.additional__info,
+.screenshots,
+.magazine__test,
+.credit__container,
+.pcb__container {
+  background: white;
+  margin: 2rem;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.game__presentation__container h4,
+.game__info__container h4,
+.other__photos h4,
+.credit__pcb h4,
+.import h4,
+.cover__compare h4,
+.ingame__compare h4,
+.version__compare h4,
+.additional__info h4,
+.screenshots h4,
+.magazine__test h4,
+.credit__container h4,
+.pcb__container h4 {
+  border-radius: 12px 12px 0px 0px;
+  padding: 1rem;
+  text-align: center;
 }
 
 .game__presentation__container {
-  background: pink;
-  padding: 1rem;
+  text-align: center;
+  border-radius: 15px;
 }
 
 .fronbox__side__container {
@@ -583,10 +624,11 @@
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  margin-top: 1rem;
 }
 
 .photo__frontbox {
-  width: 300px;
+  width: 250px;
 }
 .photo__frontbox img {
   width: 100%;
@@ -602,7 +644,7 @@
 }
 
 .game__description {
-  margin-top: 2rem;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 850px) {
@@ -620,12 +662,15 @@
 /******************************************************/
 /*********** Info et autres photos - Debut ***********/
 /****************************************************/
+.game__info__container {
+  border-radius: 15px;
+}
+
 .container__table {
   display: flex;
   justify-content: space-around;
-  background: yellowgreen;
   padding: 1rem;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .individual__info,
@@ -658,14 +703,10 @@ table.infoTable td:nth-child(even) {
 }
 
 .other__photos {
-  background: rgb(221, 67, 67);
-  padding: 1rem;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-.other__photos h3 {
-  text-align: center;
 }
 .other__photos .container__others__image {
   width: 180px;
@@ -707,39 +748,26 @@ table.infoTable td:nth-child(even) {
 /******************************************************/
 /******************* Credit et pcb *******************/
 /****************************************************/
-.credit__pcb {
-  background: rgb(220, 161, 220);
-  display: flex;
-  justify-content: space-around;
+/*********** Credit et pcb - Fin ***********/
+.import ul,
+.cover__compare ul,
+.ingame__compare ul,
+.version__compare ul,
+.additional__info ul,
+.screenshots ul,
+.magazine__test ul,
+.credit__container ul,
+.pcb__container ul {
+  padding: 2rem;
 }
 
-/*********** Credit et pcb - Fin ***********/
+.container__screenshots {
+  padding: 2rem;
+}
+
 /******************************************************/
 /******************* autres bloc *******************/
 /****************************************************/
-.import {
-  background: orange;
-}
-
-.cover__compare {
-  background: green;
-}
-
-.ingame__compare {
-  background: rgb(97, 24, 24);
-}
-
-.version__compare {
-  background: rgb(73, 71, 71);
-}
-
-.additional__info {
-  background: rgb(42, 97, 76);
-}
-
-.screenshots {
-  background: rgb(55, 55, 81);
-}
 .screenshots .container__screenshots {
   display: flex;
   justify-content: space-around;
@@ -753,13 +781,31 @@ table.infoTable td:nth-child(even) {
   height: 200px;
 }
 
-.magazine__test {
-  background: rgb(188, 177, 160);
+/**************************************************/
+/************** Bloc de droite********************/
+/************************************************/
+.right__block {
+  border-radius: 15px;
+  width: 30%;
+  text-align: center;
+  background: var(--grey2);
+  box-shadow: 0px 4px 10px 2px;
 }
 
-.right__block {
-  border: 3px solid black;
-  width: 30%;
+.timeline {
+  background: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 2rem;
+}
+.timeline h4 {
+  border-radius: 12px 12px 0px 0px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.panel-heading {
+  padding: 2rem;
 }
 
 .add__btns {
@@ -791,7 +837,7 @@ table.infoTable td:nth-child(even) {
   gap: 1rem;
 }
 .text__zone textarea {
-  background: wheat;
+  background: white;
 }
 
 @media screen and (max-width: 680px) {
@@ -1751,8 +1797,10 @@ p {
 }
 
 h1,
-h2 {
-  color: #3d4449;
+h2,
+h3,
+h4 {
+  color: var(--text);
   font-family: "early_gameboyregular";
   font-weight: 700;
   line-height: 1.5;
@@ -1786,6 +1834,8 @@ h3 {
 
 h4 {
   font-size: 1.1em;
+  background: var(--text);
+  color: white;
 }
 
 h5 {

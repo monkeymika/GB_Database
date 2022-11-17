@@ -5,24 +5,56 @@
 .container__twoBlocks {
     display: flex;
     margin: 3rem;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 // Bloc de gauche
 
 /*********** Presentation du jeu ***********/
 .left__block {
-    background: rgb(32, 31, 31);
+    border-radius: 15px;
     width: 70%;
-    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    background: var(--grey2);
+    box-shadow: 0px 4px 10px 2px;
+
+
+    li {
+        list-style-type: initial;
+        margin: 1.5rem;
+    }
+}
+
+.game__presentation__container,
+.game__info__container,
+.other__photos,
+.credit__pcb,
+.import,
+.cover__compare,
+.ingame__compare,
+.version__compare,
+.additional__info,
+.screenshots,
+.magazine__test,
+.credit__container,
+.pcb__container {
+    background: white;
+    margin: 2rem;
+    border: 2px solid black;
+    border-radius: 15px;
+
+    h4 {
+        border-radius: 12px 12px 0px 0px;
+        padding: 1rem;
+        text-align: center;
+    }
 }
 
 .game__presentation__container {
-    background: pink;
-    padding: 1rem;
+    text-align: center;
+    border-radius: 15px;
 }
 
 .fronbox__side__container {
@@ -30,13 +62,11 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
-
+    margin-top: 1rem;
 }
 
-
 .photo__frontbox {
-
-    width: 300px;
+    width: 250px;
 
     img {
         width: 100%;
@@ -54,7 +84,7 @@
 }
 
 .game__description {
-    margin-top: 2rem;
+    padding: 2rem;
 }
 
 @media screen and (max-width: 850px) {
@@ -76,12 +106,15 @@
 /******************************************************/
 /*********** Info et autres photos - Debut ***********/
 /****************************************************/
+.game__info__container {
+    border-radius: 15px;
+}
+
 .container__table {
     display: flex;
     justify-content: space-around;
-    background: yellowgreen;
     padding: 1rem;
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 
 .individual__info,
@@ -114,16 +147,10 @@ table.infoTable td:nth-child(even) {
 }
 
 .other__photos {
-    background: rgb(221, 67, 67);
-    padding: 1rem;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
-    h3 {
-        text-align: center;
-    }
-
 
     .container__others__image {
         width: 180px;
@@ -180,40 +207,34 @@ table.infoTable td:nth-child(even) {
 /******************* Credit et pcb *******************/
 /****************************************************/
 
-.credit__pcb {
-    background: rgb(220, 161, 220);
-    display: flex;
-    justify-content: space-around;
-}
 
 /*********** Credit et pcb - Fin ***********/
+
+.import,
+.cover__compare,
+.ingame__compare,
+.version__compare,
+.additional__info,
+.screenshots,
+.magazine__test,
+.credit__container,
+.pcb__container {
+
+    ul {
+        padding: 2rem;
+    }
+
+}
+
+.container__screenshots {
+    padding: 2rem;
+}
 
 /******************************************************/
 /******************* autres bloc *******************/
 /****************************************************/
 
-.import {
-    background: orange;
-}
-
-.cover__compare {
-    background: green;
-}
-
-.ingame__compare {
-    background: rgb(97, 24, 24);
-}
-
-.version__compare {
-    background: rgb(73, 71, 71);
-}
-
-.additional__info {
-    background: rgb(42, 97, 76);
-}
-
 .screenshots {
-    background: rgb(55, 55, 81);
 
     .container__screenshots {
         display: flex;
@@ -233,15 +254,35 @@ table.infoTable td:nth-child(even) {
     }
 }
 
-.magazine__test {
-    background: rgb(188, 177, 160);
-}
 
-// Bloc de droite
+/**************************************************/
+/************** Bloc de droite********************/
+/************************************************/
 
 .right__block {
-    border: 3px solid black;
+    border-radius: 15px;
     width: 30%;
+    text-align: center;
+    background: var(--grey2);
+    box-shadow: 0px 4px 10px 2px;
+}
+
+
+.timeline {
+    background: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 2rem;
+
+    h4 {
+        border-radius: 12px 12px 0px 0px;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+.panel-heading {
+    padding: 2rem;
 }
 
 .add__btns {
@@ -278,7 +319,7 @@ table.infoTable td:nth-child(even) {
 
 
     textarea {
-        background: wheat;
+        background: white;
     }
 }
 
