@@ -18,24 +18,161 @@
 
             <header>
 
-                <ul class="icons">
-                    <p>Everywhere in the world</p>
-                    <ul class="container__icons">
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i><span class="label">Facebook</span></a>
-                        </li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i><span class="label">Twitter</span></a>
-                        </li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i><span class="label">Instagram</span></a>
-                        </li>
-                    </ul>
-                </ul>
+                <div class="header_in">
+                    <button type="button" class="toggle" id="toggle">
+                        <span></span>
+                    </button>
+
+                </div>
+
                 <a href="../index.html">
-                    <img class="logo" src="../images/logo.png" alt="">
+                    <div class="logo">
+                        <img src="../images/mascotte.png" alt="">
+                        <h1>Game Boy <br> Database</h1>
+                    </div>
                 </a>
+
+                <div class="sign__btns">
+                    <i class="fa-solid fa-user"></i>
+                </div>
             </header>
 
+            <div class="sidebar" id="mySidebar">
+
+                <h3>Menu</h3>
+                <!-- Search -->
+                <div id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+                <ul>
+                    <li class="items">
+                        Fullsets
+                        <span>&#9660</span>
+                        <ul class="sub__list">
+                            <div class="container__fullset">
+                                <div class="fullset1">
+                                    <a href="../pages/fullset-ASI.html">
+                                        <li class="items__sub__list">ASI</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">AUS</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">CAN</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">CHN</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">ESP</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">EUR</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">FAH</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">FRA</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">FRG</li>
+                                    </a>
+                                </div>
+                                <div class="fullset2">
+                                    <a href="#">
+                                        <li class="items__sub__list">GPS</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">HOL</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">ITA</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">JPN</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">KOR</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">NOE</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">SCN</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">UKV</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="items__sub__list">USA</li>
+                                    </a>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li class="items">
+                        Zoom On
+                        <span>&#9660</span>
+                        <ul class="sub__list">
+                            <a href="../pages/cartridgeCollection.html">
+                                <li class="items__sub__list">The Game Boy cartridge collection</li>
+                            </a>
+                            <a href="#">
+                                <li class="items__sub__list">Ads & Catalog</li>
+                            </a>
+                            <a href="#">
+                                <li class="items__sub__list">Dig into the database</li>
+                            </a>
+                            <a href="#">
+                                <li class="items__sub__list">Zoom on companies</li>
+                            </a>
+                            <a href="#">
+                                <li class="items__sub__list">Classics Disney</li>
+                            </a>
+                            <a href="#">
+                                <li class="items__sub__list">Ocean budget white boxes</li>
+                            </a>
+                            <a href="#">
+                                <li class="items__sub__list">Player's choice</li>
+                            </a>
+                            <a href="#">
+                                <li class="items__sub__list">Timeline listing</li>
+                            </a>
+
+
+                        </ul>
+                    </li>
+                    <li class="items">
+                        About
+                        <span>&#9660</span>
+                        <ul class="sub__list">
+                            <a href="../pages/help.html">
+                                <li class="items__sub__list">How can i help ?</li>
+                            </a>
+                            <a href="#">
+                                <li class="items__sub__list">Statistics</li>
+                            </a>
+                            <a href="../pages/team.html">
+                                <li class="items__sub__list">The team</li>
+                            </a>
+
+
+                        </ul>
+                    </li>
+                </ul>
+                <img src="./images/footer-bg.png" alt="">
+            </div>
+
             <main>
-                <h2>How can i help ?</h2>
+                <div class="major">
+                    <h2>How can i help ?
+                    </h2>
+                </div>
 
                 <div class="bloc__help">
 
@@ -446,139 +583,38 @@
                 </div>
             </main>
 
-
-
-
-            <span id="hamburger">&#9776</span>
-            <div class="sidebar" id="mySidebar">
-                <a href="#" class="closebtn" id="closebtn">&times</a>
-
-                <h3>Menu</h3>
-                <!-- Search -->
-                <div id="search" class="alt">
-                    <form method="post" action="#">
-                        <input type="text" name="query" id="query" placeholder="Search" />
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </form>
-                </div>
-                <ul>
-                    <li class="items">
-
-                        Fullsets 1/2
-                        <span>&#9660</span>
-                        <ul class="sub__list">
-                            <a href="./fullset-ASI.html">
-                                <li class="items__sub__list">ASI</li>
-                            </a>
-                            <li class="items__sub__list">AUS</li>
-                            <li class="items__sub__list">CAN</li>
-                            <li class="items__sub__list">CHN</li>
-                            <li class="items__sub__list">ESP</li>
-                            <li class="items__sub__list">EUR</li>
-                            <li class="items__sub__list">FAH</li>
-                            <li class="items__sub__list">FRA</li>
-                            <li class="items__sub__list">FRG</li>
-
-                        </ul>
-
-                    </li>
-                    <li class="items">
-
-                        Fullsets 2/2
-                        <span>&#9660</span>
-                        <ul class="sub__list">
-                            <a href="./pages/fullset-ASI.html">
-                                <li class="items__sub__list">ASI</li>
-                            </a>
-                            <li class="items__sub__list">AUS</li>
-                            <li class="items__sub__list">CAN</li>
-                            <li class="items__sub__list">CHN</li>
-                            <li class="items__sub__list">ESP</li>
-                            <li class="items__sub__list">EUR</li>
-                            <li class="items__sub__list">FAH</li>
-                            <li class="items__sub__list">FRA</li>
-                            <li class="items__sub__list">FRG</li>
-
-                        </ul>
-
-                    </li>
-                    <li class="items">
-                        Zoom On
-                        <span>&#9660</span>
-                        <ul class="sub__list">
-                            <a href="./cartridgeCollection.html">
-                                <li class="items__sub__list">The Game Boy cartridge collection</li>
-                            </a>
-                            <a href="./adsCatalog.html">
-                                <li class="items__sub__list">Ads & Catalog</li>
-                            </a>
-                            <a href="./pages/fullset-ASI.html">
-                                <li class="items__sub__list">Dig into the database</li>
-                            </a>
-                            <a href="./pages/fullset-ASI.html">
-                                <li class="items__sub__list">Zoom on companies</li>
-                            </a>
-                            <a href="./pages/fullset-ASI.html">
-                                <li class="items__sub__list">Classics Disney</li>
-                            </a>
-                            <a href="./pages/fullset-ASI.html">
-                                <li class="items__sub__list">Ocean budget white boxes</li>
-                            </a>
-                            <a href="./pages/fullset-ASI.html">
-                                <li class="items__sub__list">Player's choice</li>
-                            </a>
-                            <a href="./pages/fullset-ASI.html">
-                                <li class="items__sub__list">Timeline listing</li>
-                            </a>
-
-
-                        </ul>
-                    </li>
-                    <li class="items">
-                        About
-                        <span>&#9660</span>
-                        <ul class="sub__list">
-                            <a href="../pages/help.html">
-                                <li class="items__sub__list">How can i help ?</li>
-                            </a>
-                            <a href="./pages/fullset-ASI.html">
-                                <li class="items__sub__list">Statistics</li>
-                            </a>
-                            <a href="../pages/team.html">
-                                <li class="items__sub__list">The team</li>
-                            </a>
-
-
-                        </ul>
-                    </li>
-                </ul>
-                <img src="../images/footer-bg.png" alt="">
-            </div>
-
             <footer>
 
                 <div class="container__section">
-                    <div class="footer__section">
-                        <h2>GAME BOY DATABASE</h2>
-                        <p>Everywhere in the world</p>
+                    <div class="footer__section ">
+
+                        <div class="footer__logo">
+                            <img src="./images/mascotte.png" alt="">
+                            <h2>GAME BOY <br> DATABASE</h2>
+                        </div>
                     </div>
 
+
                     <div class="footer__section">
+                        <p>Follow Us</p>
                         <div class="row">
                             <a href="#"><i class="fa-brands fa-facebook"></i></a>
                             <a href="#"><i class="fa-brands fa-twitter"></i></a>
                             <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         </div>
+                    </div>
 
+                    <div class="footer__section">
+                        <p>Contact Us</p>
                         <div class="row">
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">Privacy Police</a></li>
-                            <li><a href="">Terms and condition</a></li>
+                            <a href="mailto:dmgdatabase@gmail.com">dmgdatabase@gmail.com</a>
                         </div>
-
                     </div>
 
                 </div>
+
+                <hr>
+
                 <div class="copyright">
                     Game Boy Database 2022 - ALL rights reserved <br> Designed by MonkeysDev || Illustrations by
                     Ivankaiser
